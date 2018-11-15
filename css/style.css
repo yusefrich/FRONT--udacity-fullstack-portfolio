@@ -1,0 +1,174 @@
+html, body {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  font: 13px/1.6 "Helvetica Neue", helvetica, verdana, arial, sans-serif;
+  color: #666;
+  margin: 0px;
+  overflow-y: scroll;
+  line-height: 21px;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+a{
+  padding: 48px;
+}
+/*
+ * styling for header area
+ */
+.container-fluid{
+  padding: 0px !important;
+}
+
+header .container{
+  max-width:980px;
+  display: flex;
+  position: relative;
+}
+header .line {
+  border-bottom: solid 4px #7d97ad;
+  width:100%;
+}
+header .left-col {
+  width:40%;
+  float:left;
+}
+header .header-ending {
+  width:100%;
+  text-align: right;
+  float:left;
+}
+header .right-col {
+  width:90%;
+  text-align: right;
+  float: right;
+}
+header .right-col .name{
+  font-family: 'Roboto Slab',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  padding-bottom:5px;
+  font-size:40px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+header .right-col .career{
+  font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size:15px;
+  font-weight: normal;
+  line-height: 21px;
+}
+header .right-col .formations{
+  font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size:15px;
+  font-weight: normal;
+  line-height: 15px;
+}
+header .logo {
+  background: url("../img/logo.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: inline-block;
+  width:80px;
+  height:80px;
+}
+/*
+ * Heading and containers styling
+ */
+h2.heading {
+  text-transform: uppercase;
+  margin: 1.75rem 0;
+  border-bottom: solid 1px #aaa;
+  line-height: 0px;
+  font-weight: normal;
+  color:#627788;
+}
+h2.heading span{
+  background: #fff;
+  padding-right:10px;
+}
+.container {
+  max-width:980px;
+  margin: 0 auto;
+  padding:10px 20px;
+}
+/*
+ * portfolio items styles 
+ */
+#items {
+  display: flex; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+}
+#items .portfolio-item {
+  background: #fff;
+  width: 32%;
+  margin-bottom:2%;
+  text-align: left;
+  box-shadow: 0 2px 0 #D9E1E7;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+#items .portfolio-item img{
+  border-radius: 3px 3px 0 0;
+}
+#items .portfolio-item .text-block{
+  padding: 1.25rem;
+}
+#items .portfolio-item h3 {
+  font-size:18px;
+  color:#444;
+}
+#items .portfolio-item:nth-child(3n-1) {
+  margin-right:2%;
+  margin-left:2%;
+}
+/*
+ * footer style
+ */
+footer {
+  max-width:980px;
+  margin:0 auto;
+  padding:10px 20px;
+}
+/*
+ *Media Queries section
+ *
+ *For devices with width between 600px and 850px
+ */
+@media screen and (min-width: 600px) and (max-width: 850px)  {
+  #items .portfolio-item{
+    width:49%;
+  }
+  #items .portfolio-item:nth-child(odd) {
+    margin-right:2%;
+    margin-left:0px;
+  }
+  #items .portfolio-item:nth-child(even) {
+    margin-right:0px;
+    margin-left:0px;
+  }
+}
+/*
+ *For devices with width up to 599px
+ */    
+@media screen and (max-width: 599px)  {
+  #items .portfolio-item{
+    width:99%;
+    margin-right:0!important;
+    margin-left:0!important;
+    margin-bottom:20px;
+  }
+}
