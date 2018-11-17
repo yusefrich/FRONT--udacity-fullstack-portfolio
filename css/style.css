@@ -112,7 +112,6 @@ h2.heading span{
 }
 #items .portfolio-item {
   background: #fff;
-  width: 32%;
   margin-bottom:2%;
   text-align: left;
   box-shadow: 0 2px 0 #D9E1E7;
@@ -144,10 +143,11 @@ footer {
   padding:10px 20px;
 }
 /*
+/
  *Media Queries section
  *
  *For devices with width between 600px and 850px
- */
+ *
 @media screen and (min-width: 600px) and (max-width: 850px)  {
   #items .portfolio-item{
     width:49%;
@@ -161,9 +161,9 @@ footer {
     margin-left:0px;
   }
 }
-/*
+/
  *For devices with width up to 599px
- */    
+ *    
 @media screen and (max-width: 599px)  {
   #items .portfolio-item{
     width:99%;
@@ -172,3 +172,4 @@ footer {
     margin-bottom:20px;
   }
 }
+*/
